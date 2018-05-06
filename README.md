@@ -1,9 +1,6 @@
 # YAPP_Cosy_Project
 
----
 # passport-local 수정 부분 (writer : 김규빈)
----
-
 ---
 1. npm install 하시고
 
@@ -22,10 +19,7 @@
 
 ---
 
----
-# google-login 수정 부분 (writer : 김관현)
----
-
+# google-login-Auth수정 부분 (writer : 김관현)
 ---
 ## 1. 파일 추가 부분 
 
@@ -35,7 +29,7 @@
 ## 2. 코드 수정 부분 
 
 ### 그외 다수 코드수정 
-1. config.js 부분에 구글 패스포트 관련(개인 oath) 코드 추가
+1. config.js 부분에 구글 패스포트 관련(개인 Auth) 코드 추가
 2. passport.js google.js받아오는부분 추가
 3. user_schema.js 스키마 부분에서 hashed_password,salt 스키마변수에서 몇번 에러나서 고생함. type을 string값만 주어서 가져오니까 잘 들어갔습니다.
 
@@ -51,9 +45,7 @@
 
 	1) use cosy_db 로 cosy_db 만들어주고
 	2) db.createCollection('users') 로 컬렉션 생성해줍니다
-
-
-	만들어 놓은 db 스키마는 database/user_schema.js
+	3) 만들어 놓은 db 스키마는 database/user_schema.js
 	
 - 규빈이가 말해놓은것처럼 동일 환경은 유지 시켜놓음 
 
