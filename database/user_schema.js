@@ -13,10 +13,10 @@ Schema.createSchema = function(mongoose) {
 
 	// 스키마 정의
 	var UserSchema = mongoose.Schema({
-			id_email: {type: String, 'default':''}
-	    , hashed_password: {type: String, required: true, 'default':''}
+            id_email: {type: String, 'default':''}
+	    , hashed_password: {type: String}
 	    , name: {type: String, index: 'hashed', 'default':''}
-	    , salt: {type:String, required:true}
+	    , salt: {type:String}
 	    , created_at: {type: Date, index: {unique: false}, 'default': Date.now}
 	    , updated_at: {type: Date, index: {unique: false}, 'default': Date.now},
 			birthday: String,
@@ -71,7 +71,8 @@ Schema.createSchema = function(mongoose) {
 		if (!this.isNew) return next();
 
 		if (!validatePresenceOf(this.password)) {
-			next(new Error('유효하지 않은 password 필드입니다.'));
+            next();
+			//next(new Error('유효하지 않은 password 필드입니다.'));
 		} else {
 			next();
 		}

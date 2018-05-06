@@ -68,6 +68,8 @@ module.exports = function(router, passport) {
                 res.render('profile.ejs', {user: req.user});
             }
         }
+        
+        console.log("============="+ req.user[0]);
     });
 
     // 로그아웃
@@ -89,6 +91,19 @@ module.exports = function(router, passport) {
     router.route('/signup').post(passport.authenticate('local-signup', {
         successRedirect : '/Login',
         failureRedirect : '/RegPageUI',
+        failureFlash : true
+    }));
+    
+    
+    // 패스포트 - 구글 인증 라우팅 
+    router.route('/auth/google').get(passport.authenticate('google', { 
+        scope : 'email' 
+    }));
+
+    // 패스포트 - 구글 인증 콜백 라우팅
+    router.route('/auth/google/callback').get(passport.authenticate('google', {
+        successRedirect : '/ActivePageUI',
+        failureRedirect : '/Login',
         failureFlash : true
     }));
 

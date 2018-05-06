@@ -13,5 +13,10 @@ module.exports = {
 	],
     // 라우터 모듈들 여기다가 저장함
 	route_info: [
-	]
+	],
+	google: {		// passport google
+	clientID: "1093300025500-1fej7dn7v4uvfk0unu1udpv7l1k97lin.apps.googleusercontent.com",
+	clientSecret: "q2wUOUK54SJHqnlR4oyzNGA4",
+	callbackURL: 'http://localhost:44444/auth/google/callback'
+	}
 };
