@@ -1,6 +1,8 @@
 # YAPP_Cosy_Project
 
 # passport-local 수정 부분 (writer : 김규빈)
+
+
 ---
 1. npm install 하시고
 
@@ -20,6 +22,8 @@
 ---
 
 # google-login-Auth수정 부분 (writer : 김관현)
+
+
 ---
 ## 1. 파일 추가 부분 
 
