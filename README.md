@@ -25,6 +25,6 @@ ex ) set GOOGLE_APPLICATION_CREDENTIALS=C:\Users\happy\Desktop\Goole_Cloud_Platf
 ### 더 자세한 사용방법은 아래를 참고
 
 1. 문장 감성 분석 및 랜덤 문장 추출 사용법<p> 
-https://www.evernote.com/shard/s439/nl/177920690/7c25c640-96c7-4685-afdc-07d1a48d69be <p>
+http://www.evernote.com/l/Abd8JcZAlsdGha_cB9GkjWm-DgiDEYT2nAk/ <p>
 2. Google Sentiment API 사용하기 - json파일 <p>
-https://www.evernote.com/shard/s439/nl/177920690/8d93def1-ccd8-4667-9893-8b5455e562d1 <p>
+http://www.evernote.com/l/AbeNk97xzNhGZ5iTi1RV5WLRh_gdqS1P54M/ <p>
