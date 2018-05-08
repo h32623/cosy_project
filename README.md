@@ -1,0 +1,30 @@
+# cosy_project_chatbot
+## 문장 감성 분석 후 랜덤으로 문장(답변) 추출 
+<li> goodSentence.csv </li>
+  사용자가 입력한 문장이 0 과 1.0 사이일 때의 답변 : 기분 좋은 답변 
+<li> sadSentence.csv </li>
+  사용자가 입력한 문장이 -1.0 과 0 사이일 때의 답변 : 위로하는 답변 
+<li> sentiment_analysis.py </li>
+  사용자 문장 감성분석 및 답변을 불러오는 코드가 들어있는 파일
+<li> sentText.txt </li>
+  사용자 문장을 입력하는 텍스트파일 : 실제 프로젝트에선 이 파일을 사용하지 않음
+  
+
+## 결과 보는 방법 
+1. sentText.txt에 사용자 문장을 입력한다.
+2. cmd 창 또는 Anaconda Prompt에서 
+`set GOOGLE_APPLICATION_CREDENTIALS=Goole_Cloud_Platform에서 받은 json파일 실행경로`를 입력한다.  
+ex ) set GOOGLE_APPLICATION_CREDENTIALS=C:\Users\happy\Desktop\Goole_Cloud_Platform\My First Project-01e4a5c0f738.json
+
+
+3. `python sentiment_analysis.py sentText.txt` 명령어를 실행한다
+
+
+
+
+### 더 자세한 사용방법은 아래를 참고
+
+1. 문장 감성 분석 및 랜덤 문장 추출 사용법<p> 
+https://www.evernote.com/shard/s439/nl/177920690/7c25c640-96c7-4685-afdc-07d1a48d69be <p>
+2. Google Sentiment API 사용하기 - json파일 <p>
+https://www.evernote.com/shard/s439/nl/177920690/8d93def1-ccd8-4667-9893-8b5455e562d1 <p>
