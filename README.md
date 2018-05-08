@@ -21,6 +21,10 @@ ex ) set GOOGLE_APPLICATION_CREDENTIALS=C:\Users\happy\Desktop\Goole_Cloud_Platf
 
 
 
+## 결과화면
+![image01](https://user-images.githubusercontent.com/29648470/39761815-05920efe-5314-11e8-9efe-a00d3df2ce0f.png)
+* 명령어를 실행할 때마다 문장 감성 점수에 맞는 다른 답변이 선택되어 출력된다
+
 
 ### 더 자세한 사용방법은 아래를 참고
 
